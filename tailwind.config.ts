@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // Custom theme colors
+                pearl: "#F5F3F0",
+                teal: "#2A5B5E",
+                gold: "#C4A265",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +89,33 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' }
+                },
+                'reveal-text': {
+                    '0%': { 
+                        transform: 'translateY(20px)',
+                        opacity: '0'
+                    },
+                    '100%': { 
+                        transform: 'translateY(0)',
+                        opacity: '1'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 1s ease-out forwards',
+                'reveal-text': 'reveal-text 0.8s ease-out forwards'
+			},
+            fontFamily: {
+                sans: ['Poppins', 'sans-serif'],
+                arabic: ['Amiri', 'serif'],
+                hybrid: ['Noto Sans Arabic', 'Poppins', 'sans-serif']
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
