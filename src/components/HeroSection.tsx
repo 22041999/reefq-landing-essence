@@ -8,10 +8,14 @@ const HeroSection = () => {
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-semibold mb-6">
-              <span className="text-gradient">Reefq</span>
-              <span className="font-arabic text-4xl md:text-5xl ml-4 text-gold">رفـق</span>
-            </h1>
+            <div className="mb-6">
+              <img 
+                src="/lovable-uploads/efedb227-31a7-4946-95b2-63f908640dc8.png" 
+                alt="Reefq Logo" 
+                className="h-20 md:h-24 mb-4"
+              />
+              <span className="font-arabic text-4xl md:text-5xl text-gold">رفـق</span>
+            </div>
             <p className="text-lg md:text-xl mb-8 text-teal/80 max-w-lg">
               Bridging cultures through elegant design and thoughtful experiences. 
               Discover the art of refined simplicity.
@@ -35,7 +39,11 @@ const HeroSection = () => {
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-60 h-60 rounded-full border-8 border-gold/30 flex items-center justify-center">
-                    <span className="font-hybrid text-5xl text-teal">Reefq</span>
+                    <img 
+                      src="/lovable-uploads/efedb227-31a7-4946-95b2-63f908640dc8.png" 
+                      alt="Reefq Logo" 
+                      className="h-24"
+                    />
                   </div>
                 </div>
               </div>

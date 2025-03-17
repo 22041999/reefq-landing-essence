@@ -32,10 +32,11 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <div className="flex items-center">
-          <span className="text-2xl font-arabic text-teal">
-            <span className="text-gold">ر</span>فق
-          </span>
-          <span className="ml-2 text-xl font-semibold">Reefq</span>
+          <img 
+            src="/lovable-uploads/efedb227-31a7-4946-95b2-63f908640dc8.png" 
+            alt="Reefq Logo" 
+            className="h-10 md:h-12"
+          />
         </div>
         
         {/* Desktop Navigation */}
